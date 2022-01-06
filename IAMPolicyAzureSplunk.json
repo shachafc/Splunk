@@ -1,0 +1,49 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "config:DeliverConfigSnapshot",
+                "config:DescribeConfigRules",
+                "config:DescribeConfigRuleEvaluationStatus",
+                "config:GetComplianceDetailsByConfigRule",
+                "config:GetComplianceSummaryByConfigRule",
+                "s3:Get*",
+                "s3:List*",
+                "s3:Delete*",
+                "cloudwatch:List*",
+                "cloudwatch:Get*",
+                "autoscaling:Describe*",
+                "ec2:Describe*",
+                "sqs:List*",
+                "sns:List*",
+                "lambda:List*",
+                "elasticloadbalancing:Describe*",
+                "logs:DescribeLogGroups",
+                "logs:DescribeLogStreams",
+                "logs:GetLogEvents",
+                "inspector:Describe*",
+                "inspector:List*",
+                "kinesis:Get*",
+                "kinesis:DescribeStream",
+                "kinesis:ListStreams",
+                "sqs:GetQueueUrl",
+                "sqs:ReceiveMessage",
+                "sqs:SendMessage",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes",
+                "kms:Decrypt",
+                "rds:DescribeDBInstances",
+                "cloudfront:ListDistributions",
+                "iam:GetUser",
+                "iam:ListUsers",
+                "iam:GetAccountPasswordPolicy",
+                "iam:ListAccessKeys",
+                "iam:GetAccessKeyLastUsed",
+                "sts:AssumeRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
